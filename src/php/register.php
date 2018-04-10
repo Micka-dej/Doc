@@ -1,10 +1,4 @@
 
-/**
- * Created by PhpStorm.
- * User: eugenieroques
- * Date: 10/04/2018
- * Time: 11:46
- */
 <!DOCTYPE html>
 
 <html>
