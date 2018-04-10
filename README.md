@@ -5,12 +5,12 @@ Nous avons réalisé un site e-commerce de cigarettes  éléctroniques en intreg
 
 Fonctionnalités du site :
 
-  1.[ ] Fil d'ariane . 
-  2.[ ] Panier . 
+  1.[ ] Fil d'ariane 
+  2.[ ] Panier 
   3.[ ] Espace de connexion . 
-  4.[ ] Mise en avant des produits (prix, descriptions etc...) . 
-  5.[ ] Avis des utilisateurs
-  6.[ ] Modélisation 3D . 
+  4.[ ] Mise en avant des produits (prix, descriptions etc...) 
+  5.[ ] Avis des utilisateurs  
+  6.[ ] Modélisation 3D 
 
 
 ## SiteMap
