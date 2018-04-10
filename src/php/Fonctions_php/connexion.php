@@ -9,8 +9,8 @@
 /* Paramètres de connexion à la db*/
 $host = '127.0.0.1';
 $dbname = 'breathink';
-$username = 'root';
-$password = 'root';
+$username = 'breathink';
+$password = 'breathink';
 
 /* connexion à la db, on catch une eventuelle erreur de connexion*/
 try {

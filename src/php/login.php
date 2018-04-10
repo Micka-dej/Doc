@@ -66,7 +66,7 @@ WHERE
     <img class="logo" src="../img/" alt="Logo">
     <div class="formContainer">
 
-        <h1 class="title">Bienvenue sur Meat.</h1>
+        <h1 class="title"></h1>
 
 
         <form class="" action="" method="post">
@@ -76,9 +76,7 @@ WHERE
                 <p class="formText">Vous n’avez pas de compte ? <strong><a class="Register" href="add.php">Inscrivez-vous !</a></strong></p>
                 <input class="submitInput" type="submit" name="submit" value="Se Connecter">
                 <p class="error" style="color: white; text-align: center;"><?=$_SESSION['error']?></p>
-                <a href="admin.php" class="link" style=" margin: 0 auto;">
-                    <input class="submitInput" value="Connexion Admin">
-                </a>
+
             </div>
         </form>
 
