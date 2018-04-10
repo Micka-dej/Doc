@@ -1,0 +1,24 @@
+{
+  "name": "smoktech",
+  "version": "1.0.0",
+  "description": "## Projet breathink 🚬 Nous avons réalisé un site e-commerce de cigarettes  éléctroniques en intregrant un configurateur de modelisation 3D.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doriangue/Projet_breathink.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Doriangue/Projet_breathink/issues"
+  },
+  "homepage": "https://github.com/Doriangue/Projet_breathink#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3",
+    "parcel-bundler": "^1.7.0"
+  }
+}
