@@ -14,7 +14,7 @@ $password = 'breathink';
 
 /* connexion à la db, on catch une eventuelle erreur de connexion*/
 try {
-    $connection = new PDO('mysql:host='.$host.';dbname='.$dbname.';', $username, $password);
+    $conn = new PDO('mysql:host='.$host.';dbname='.$dbname.';', $username, $password);
 
 } catch (PDOException $exception){
     die($exception -> getMessage());
