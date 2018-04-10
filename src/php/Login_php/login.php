@@ -1,6 +1,6 @@
 <?php
 
-require_once "Fonctions_php/connexion.php";
+require_once "../Fonctions_php/connexion.php";
 
 
 error_reporting(0);
@@ -46,9 +46,7 @@ WHERE
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="../img/">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="styles/main.scss">
     <title>Breathink</title>
 </head>
 
@@ -82,7 +80,7 @@ WHERE
 </html>
 
 <?php
-require_once "Fonctions_php/connexion.php";
+require_once "../Fonctions_php/connexion.php";
 
 if (!empty($_POST['nom']) ||
     !empty($_POST['password']) ||
