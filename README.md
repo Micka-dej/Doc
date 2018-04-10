@@ -10,7 +10,7 @@ Fonctionnalités du site :
   3.[ ] Espace de connexion   
   4.[ ] Mise en avant des produits (prix, descriptions etc...)    
   5.[ ] Avis des utilisateurs     
-  6.[ ] Modélisation 3D 
+  6.[x] Modélisation 3D 
 
 
 ## SiteMap
