@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: eugenieroques
- * Date: 10/04/2018
- * Time: 11:02
- */
 
 require_once "Fonctions_php/connexion.php";
 
