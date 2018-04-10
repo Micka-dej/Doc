@@ -1,3 +1,43 @@
+<?php
+
+require_once "../Fonctions_php/connexion.php";
+
+
+error_reporting(0);
+session_start();
+
+$_SESSION['error'] = "";
+if (!empty($_POST['email']) || !empty($_POST['password'])) {
+    $email = htmlentities($_POST['email']);
+    $password = htmlentities($_POST['password']);
+
+    if (!empty($email) && !empty($password)) {
+        $requete = "SELECT
+`email`,
+`password`
+FROM
+`Users`
+WHERE
+`email` = :email AND
+`password` = :password
+;";
+
+        $stmt = $conn->prepare($requete);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':password', $password);
+        $stmt->execute();
+        $user = $stmt->fetch();
+
+        if ($user) {
+            header('location: register.php');
+        } else {
+            $_SESSION['error'] = 'Email ou mot de passe incorrect';
+        }
+    }
+}
+
+?>
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -44,7 +84,18 @@
             <div class="modalLogin-contentLeft">
                 <div class="loginBtn"></div>
             </div>
-            <div class="modalLogin-contentRight"></div>
+            <div class="modalLogin-contentRight">
+                <form class="" action="" method="post">
+                    <div class="formFlex">
+                        <input class="loginInput" type="email" name="email" value="" placeholder="Votre Email">
+                        <input class="loginInput" type="password" name="password" value="" placeholder="Votre mot de passe">
+                        <p class="formText">Vous n’avez pas de compte ? <strong><a class="Register" href="add_login.php">Inscrivez-vous !</a></strong></p>
+                        <input class="submitInput" type="submit" name="submit" value="Se Connecter">
+                        <p class="error" style="color: #ff4a4c; text-align: center;"><?=$_SESSION['error']?></p>
+
+                    </div>
+                </form>
+            </div>
 
         </div>
     </section>
