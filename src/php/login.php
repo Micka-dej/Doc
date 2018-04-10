@@ -58,12 +58,12 @@ WHERE
     <link rel="shortcut icon" href="../img/">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/login.css">
-    <title>Meat</title>
+    <title>Breathink</title>
 </head>
 
 <body>
 <div class="content">
-    <img class="logo" src="../img/" alt="Logo">
+
     <div class="formContainer">
 
         <h1 class="title"></h1>
@@ -73,7 +73,7 @@ WHERE
             <div class="formFlex">
                 <input class="loginInput" type="email" name="email" value="" placeholder="Votre Email">
                 <input class="loginInput" type="password" name="password" value="" placeholder="Votre mot de passe">
-                <p class="formText">Vous n’avez pas de compte ? <strong><a class="Register" href="add.php">Inscrivez-vous !</a></strong></p>
+                <p class="formText">Vous n’avez pas de compte ? <strong><a class="Register" href="add_login.php">Inscrivez-vous !</a></strong></p>
                 <input class="submitInput" type="submit" name="submit" value="Se Connecter">
                 <p class="error" style="color: white; text-align: center;"><?=$_SESSION['error']?></p>
 
