@@ -12,7 +12,6 @@ Nous avons réalisé un site e-commerce de cigarettes  éléctroniques en intreg
     5. [ ] Avis des utilisateurs     
     6. [ ] Modélisation 3D 
 
-Fonctionnalités du site :
 
 
 ## SiteMap
