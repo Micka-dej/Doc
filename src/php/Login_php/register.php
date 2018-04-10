@@ -7,10 +7,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="../img/ViandeLogo.png">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/register.css">
-  <title>Meat</title>
+  <link rel="stylesheet" href="styles/main.scss">
+  <title>Inscription</title>
 </head>
 
 <body>
