@@ -22,7 +22,7 @@ require_once "../Fonctions_php/connexion.php";
 <h1 style="text-align: center; font-size: 30px; margin-top: 30px;"> Mon panier</h1>
 <div class="flex" style="margin: 30px 30px; display: flex; height: 150px;">
     <?php foreach ($_SESSION['panierStock'] as $item){
-        $req = $conn->prepare('SELECT * FROM breathink WHERE id = :id');
+        $req = $conn->prepare('SELECT * FROM panier WHERE id = :id');
         $req->execute([':id' => $item]);
         $element = $req->fetch();
         ?>
@@ -30,7 +30,6 @@ require_once "../Fonctions_php/connexion.php";
         <!-- Fill the fields with values returned in $row */ -->
         <div style="margin-left: 20px;">
             <h1 style="margin-bottom: 10px;" ><?=$element['nom']?></h1>
-            <img style="width: auto;height: 150px; " id="image" class="productImg" src="../app/backOffice/img/<?=$element['image']?>" alt="">
         </div>
     <?php } ?>
 </div>
