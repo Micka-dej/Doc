@@ -18,10 +18,10 @@ session_start();
     <header class="header">
      <nav class="navBar">
             <div class="navBar-left">
-                <img src="./assets/imgs/navLogo.svg" alt="" class="navLogo">
+                <a href="index.php"><img src="./assets/imgs/navLogo.svg" alt="" class="navLogo"></a>
             </div>
             <div class="navBar-right">
-                <div class="navItems">produits</div>
+                <div class="navItems"><a href="products.php">produits</a></div>
                 <div class="navItems">personnaliser</div>
                 <div class="navItems">packs</div>
                 <div class="navShoppingBag">
@@ -138,31 +138,38 @@ session_start();
 
 
 
-<section class="recommandation">
-    <div class="recommandationContainer">
+    <section class="recommandation">
+        <h1 class="recommandationText">Recommandée pour vous</h1>
+        <div class="recommandationContainer">
 
-        <h1 class="recommandationTitle"></h1>
+            <div class="recommandationItem">
+                <img class="recommandationItemImg" src="assets/imgs/imgSection.jpg" alt="img">
+                <p class="recommandationItemPrice">19 €</p>
+                <div class="recommandationItemDot"></div>
+            </div>
 
-        <div class="recommandationItem">
-            <img class="recommandationItemImg" src="./assets/imgs/e-liquide.jpg" alt="img">
-            <p class="recommandationItemPrice">19 €</p>
-            <div class="recommandationItemDot"></div>
+            <div class="recommandationItem">
+                <img class="recommandationItemImg" src="assets/imgs/imgSection.jpg" alt="img">
+                <p class="recommandationItemPrice">29 €</p>
+                <div class="recommandationItemDot"></div>
+            </div>
+
+            <div class="recommandationItem">
+                <img class="recommandationItemImg" src="assets/imgs/imgSection.jpg" alt="img">
+                <p class="recommandationItemPrice">39 €</p>
+                <div class="recommandationItemDot"></div>
+            </div>
+            <div class="recommandationItem">
+                <img class="recommandationItemImg" src="./assets/imgs/e-liquide.jpg" alt="img">
+                <p class="recommandationItemPrice">19 €</p>
+                <div class="recommandationItemDot"></div>
+            </div>
+
         </div>
+    </section>
 
-        <div class="recommandationItem">
-            <img class="recommandationItemImg" src="./assets/imgs/e-liquide.jpg" alt="img">
-            <p>29 €</p>
-            <div class="recommandationItemDot"></div>
-        </div>
 
-        <div class="recommandationItem">
-            <img class="recommandationItemImg" src="./assets/imgs/e-liquide.jpg" alt="img">
-            <p>39 €</p>
-            <div class="recommandationItemDot"></div>
-        </div>
 
-    </div>
-</section>
 
 
     <script src="js/loginModal.js"></script>
