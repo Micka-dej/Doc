@@ -1,0 +1,31 @@
+.recommandation{
+  &ItemImg{
+    width: 60px;
+    height: 60px;
+    padding-bottom: 10px;
+  }
+  &ItemDot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #4A4B4A;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &Container{
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  }
+  &Text{
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 80px;
+
+  }
+  &ItemPrice{
+  text-align: center;
+  padding-bottom: 10px;
+  }
+}

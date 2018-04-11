@@ -34,7 +34,11 @@
                      </div>
                     <p class="navBurgerText">menu</p>
                 </div>
-
+               <div class="navBurgerMenu-after">
+                <p class="navBurgerMenu-nav">Contact</p>
+                <p class="navBurgerMenu-nav">Tooto</p>
+                <p class="navBurgerMenu-nav">ahahahh</p>
+               </div>
             </div>
         </nav>
 
@@ -127,27 +131,25 @@
 
 
 
-<section class="recommandation">
-<div class="recommandationContainer">
+    <section class="recommandation">
+        <h1 class="recommandationText">Recommandée pour vous</h1>
+      <div class="recommandationContainer">
 
-<h1 class="recommandationTitle"></h1>
-
-<<<<<<< HEAD
       <div class="recommandationItem">
-        <img class="recommandationItemImg" src="" alt="img">
+        <img class="recommandationItemImg" src="assets/imgs/imgSection.jpg" alt="img">
         <p class="recommandationItemPrice">19 €</p>
         <div class="recommandationItemDot"></div>
       </div>
 
       <div class="recommandationItem">
-        <img class="recommandationItemImg" src="" alt="img">
-        <p>29 €</p>
+        <img class="recommandationItemImg" src="assets/imgs/imgSection.jpg" alt="img">
+        <p class="recommandationItemPrice">29 €</p>
         <div class="recommandationItemDot"></div>
       </div>
 
       <div class="recommandationItem">
-        <img class="recommandationItemImg" src="" alt="img">
-        <p>39 €</p>
+        <img class="recommandationItemImg" src="assets/imgs/imgSection.jpg" alt="img">
+        <p class="recommandationItemPrice">39 €</p>
         <div class="recommandationItemDot"></div>
       </div>
 =======
@@ -157,21 +159,79 @@
 <div class="recommandationItemDot"></div>
 </div>
 
-<div class="recommandationItem">
-<img class="recommandationItemImg" src="./assets/imgs/e-liquide.jpg" alt="img">
-<p>29 €</p>
-<div class="recommandationItemDot"></div>
-</div>
+    </div>
+    </section>
 
-<div class="recommandationItem">
-<img class="recommandationItemImg" src="./assets/imgs/e-liquide.jpg" alt="img">
-<p>39 €</p>
-<div class="recommandationItemDot"></div>
-</div>
->>>>>>> 0019dc88e3c41e5f57451f5836757a9a0dc22c4c
+    <section class="products">
+
+      <section class="productsItem gecko">
+        <div class="productsItemImg">
+          <p class="productsItemTitle">Gecko</p>
+          <img class="productsImg" src="assets/imgs/gecko.jpg" alt="yeh">
+        </div>
+        <div class="productsItemDesc">
+          <p class="productsItemPrice">69 €</p>
+          <p class="productsItemText-high">La cigarette la plus apprécié selon nos utilisateurs.</p>
+          <div class="productsImgContainer">
+            <img class="productStars" src="assets/imgs/starwhite.svg" alt="">
+            <img class="productStars" src="assets/imgs/starwhite.svg" alt="">
+            <img class="productStars" src="assets/imgs/starwhite.svg" alt="">
+            <img class="productStars" src="assets/imgs/starwhite.svg" alt="">
+            <img class="productStars" src="assets/imgs/starwhite.svg" alt="">
+          </div>
+          <p class="productsItemText-low">Gecko est un concentré de performance et de design concentré dans un micro setup de moins de 10 cm.</p>
+          <div class="productsItemButton"><button type="button" name="button">Ajouter aux panier</button></div>
+        </div>
+      </section>
+
+      <!-- <section class="productsItem vaporesso">
+        <div class="productsItemImg">
+          <p class="productsItemTitle">vaporesso</p> -->
+          <!-- <img src="" alt=""> -->
+        <!-- </div>
+        <div class="productsItemDesc">
+          <p class="productsItemPrice">69 €</p>
+          <p class="productsItemText-high">La cigarette la plus apprécié selon nos utilisateurs.</p>
+          <div class="productsImgContainer"> -->
+            <!-- <img class="productImg" src="" alt="">
+            <img class="productImg" src="" alt="">
+            <img class="productImg" src="" alt="">
+            <img class="productImg" src="" alt="">
+            <img class="productImg" src="" alt=""> -->
+          <!-- </div>
+          <p class="productsItemText-low">Gecko est un concentré de performance et de design concentré dans un micro setup de moins de 10 cm.</p>
+          <button type="button" name="button">Ajouter aux panier</button>
+        </div>
+      </section> -->
+
+    </section>
+    <script type="text/javascript">
+
+    var menuHover = document.querySelector('.navBurgerMenu');
+    var menuText = document.querySelector('.navBurgerText');
+    var menuAfter = document.querySelector('.navBurgerMenu-after');
+    var trait = document.querySelector('.middle');
+    menuHover.addEventListener('mouseover', function(){
+      menuAfter.style.height = '212px';
+      menuText.style.display = 'none';
+      trait.style.height = '140px';
+    });
+    document.addEventListener('mouseout', function(){
+      menuAfter.style.height = '';
+      menuText.style.display = 'block';
+      trait.style.height = '40px';
+    });
+    menuAfter.addEventListener('mouseover', function(){
+      menuAfter.style.height = '212px';
+      menuText.style.display = 'none';
+      trait.style.height = '140px';
+    });
+
+  </script>
 
 </div>
 </section>
     <script src="js/ui.js"></script>
+>>>>>>> master
 </body>
 </html>
