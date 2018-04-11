@@ -20,6 +20,11 @@
                 <div class="navShoppingBag">
                     <img src="./assets/imgs/shopping-bag.svg" alt="" class="shoppingBagImg">
                 </div>
+                <div class="modalShoppingBag">
+                    <div class="modalShoppingBag-content">
+
+                    </div>
+                </div>
 
                 <div class="navBurgerMenu">
                     <div class="navBurgerLine">
@@ -35,70 +40,57 @@
         
     </header>
 
-    <section class="promo">
+<section class="promo">
 
-        <div class="login">
-            <img src="assets/imgs/login.svg" alt="" class="loginImg">
-            <p class="loginText">Login</p>
+    <div class="login">
+        <img src="assets/imgs/login.svg" alt="" class="loginImg">
+        <p class="loginText">Login</p>
+    </div>
+
+    <div class="modalLogin">
+        <div class="modalLogin-contentLeft">
+            <div class="loginBtn">S’inscrire</div>
+            <p class="loginSubText">Smo’tech - inscrivez-vous,
+                commandez votre pack et le tour
+                est joué !</p>
         </div>
-
-        <div class="modalLogin">
-            <div class="modalLogin-contentLeft">
-                <div class="loginBtn">S’inscrire</div>
-                <p class="loginSubText">Smo’tech - inscrivez-vous,
-                    commandez votre pack et le tour
-                    est joué !</p>
+        <div class="modalLogin-contentRight">
+            <div class="headTitleRight">
+                <p class="loginText">Login</p>
+                <img src="./assets/imgs/cross.svg" alt="" class="crossImg">
             </div>
-            <div class="modalLogin-contentRight">
-                <div class="headTitleRight">
-                    <p class="loginText">Login</p>
-                    <img src="./assets/imgs/cross.svg" alt="" class="crossImg">
-                </div>
 
-                <form action="" class="headFormRight">
-                    <label class="loginLabel">mail</label>
-                    <input type="email" class="loginInput">
-                    <label class="loginLabel">mot de passe</label>
-                    <input type="password" class="loginInput">
+            <form action="" class="headFormRight">
+                <label class="loginLabel">mail</label>
+                <input type="email" class="loginInput">
+                <label class="loginLabel">mot de passe</label>
+                <input type="password" class="loginInput">
 
-                    <button type="submit" class="loginBtn">
-                        <p>confirmer</p>
-                    </button>
-                </form>
-            </div>
-<<<<<<< HEAD
-=======
-            <div class="modalLogin-contentRight">
-                <form class="" action="" method="post">
-                    <div class="formFlex">
-                        <input class="loginInput" type="email" name="email" value="" placeholder="Votre Email">
-                        <input class="loginInput" type="password" name="password" value="" placeholder="Votre mot de passe">
-                        <p class="formText">Vous n’avez pas de compte ? <strong><a class="Register" href="add_login.php">Inscrivez-vous !</a></strong></p>
-                        <input class="submitInput" type="submit" name="submit" value="Se Connecter">
-                        <p class="error" style="color: #ff4a4c; text-align: center;"><?=$_SESSION['error']?></p>
-
-                    </div>
-                </form>
-            </div>
->>>>>>> d6a44bda3bf52dcac0c1d38e858612469da4dc82
-
+                <button type="submit" class="loginBtn">
+                    <p>confirmer</p>
+                </button>
+            </form>
         </div>
+    </div>
 
-        <article class="articleContainer">
-            <div class="article">
-                <div class="articleTitle">Cigarette Electronique</div>
-                <div class="articleText"> La cigarette électronique est un appareil capable de vaporiser du eliquide arômatisé nicotiné ou non destiné à être inhalé. Ce dispositif produit une vapeur ressemblant visuellement à la fumée produite par la combustion du tabac.</div>
-            </div>
-            <div class="middlerec"></div>
-            <div class="articleImg">
-                <img src="assets/imgs/imgSection.jpg" alt="">
-            </div>
-        </article>
+    <article class="articleContainer">
+        <div class="article">
+            <div class="articleTitle">Cigarette Electronique</div>
+            <div class="articleText"> La cigarette électronique est un appareil capable de vaporiser du eliquide arômatisé nicotiné ou non destiné à être inhalé. Ce dispositif produit une vapeur ressemblant visuellement à la fumée produite par la combustion du tabac.</div>
+        </div>
+        <div class="middlerec"></div>
+        <div class="articleImg">
+            <img src="assets/imgs/imgSection.jpg" alt="">
+        </div>
+    </article>
 
-    </section>
+</section>
 
 
-
+<section class="citeSection">
+    <div class="citeTitle">Smo’tech</div>
+    <div class="citeText">Une maison de vente pour cigarette éléctronique pour les clients débutant / intermédiaire et aussi pour les experts.</div>
+</section>
 
 <section class="packs">
     <div class="packsContainer">

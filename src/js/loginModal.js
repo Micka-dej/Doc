@@ -12,4 +12,5 @@ window.addEventListener('click',function(event){
 });
 close.addEventListener('click',function () {
     modal.style.display = "";
+
 });
