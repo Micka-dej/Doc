@@ -3,49 +3,39 @@ a{
 }
 
 .packs{
-  padding: 10% 0;
-
-  &Container{
-    margin-left: 30%;
-  }
-
-
   &Item{
     border: 1px solid #969696;
     width: 50%;
-    height: auto;
-    margin-top: 40px;
-    text-align: center;
-    padding: 30px 0;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &ItemTitle{
     font-size: 2rem;
-    text-align: center;
     color: black;
   }
 
   &ItemDesc{
     font-size: 1.5rem;
-    text-align: center;
-    margin-top: 5px;
     color:#8F928F;
+    padding: 1% 0;
   }
 
   &ItemPrice{
     font-size: 2rem;
-    text-align: center;
     margin-top: 10px;
     color: black;
   }
 }
 .personalized{
-  padding: 40px 0;
   transition: 1s ease;
 }
 .personalized:hover{
   background-color: #4A4B4A;
-  transition: 1s ease;
 }
 .personalizedTitle{
   color: #50E2C1;
