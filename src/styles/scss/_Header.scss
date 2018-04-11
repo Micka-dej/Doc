@@ -33,7 +33,6 @@
       cursor: pointer;
     }
     .navBurgerMenu{
-      cursor: pointer;
       width: 16%;
       background: #4A4B4A;
       height: 223px;
@@ -43,6 +42,20 @@
       text-align: center;
       padding-top: 50px;
     }
+
+    .navBurgerMenu-after{
+      position: absolute;
+      cursor: pointer;
+      width: 9.9%;
+      background: #4A4B4A;
+      height: 0px;
+      right: 6.2%;
+      margin-top: 243px;
+      transition: 0.4s;
+      overflow: hidden;
+      max-height: 213px;
+    }
+
     .navBurgerLine{
       padding: 62px 0 45px 0;
       height: 100%;
@@ -59,6 +72,8 @@
       .middle{
         height: 80%;
         transition: 0.2s ease;
+        position: absolute;
+        z-index: 2;
       }
     }
     .navBurgerLine:hover{
@@ -72,4 +87,9 @@
       padding-bottom: 32px;
     }
   }
+}
+.navBurgerMenu-nav{
+  text-align: center;
+  color: white;
+  margin-top: 35px;
 }
