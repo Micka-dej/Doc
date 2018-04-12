@@ -507,6 +507,7 @@ a{
 
 
 .products{
+  padding-top: 5%;
   &ItemTitle{
     text-align: center;
     font-size: 3rem;
@@ -520,31 +521,28 @@ a{
     height:430px;
     width: 500px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s ;
     background-color: white;
     padding: 2%;
   }
   &ImgContainer{
     display: flex;
   }
-  &Stars{
-    width: 300px;
-    height: 300px;
-  }
   &ItemImg:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   &Item{
-    padding: 10% 0;
+    padding: 4% 0;
     display: flex;
     margin: 0 auto;
     width: 90%;
   }
+
   &ItemDesc{
     height: 300px;
     background-color: #4A4B4A;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.24);
-    margin-top: 33px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 63px;
     margin-left: -70px;
     padding: 2%;
     width: 80%;
@@ -552,23 +550,154 @@ a{
   &ItemPrice{
     font-size: 3rem;
     color: #50E2C1;
+    padding-bottom: 15px;
+  }
+  &ItemText-all{
+    margin: 0 auto;
+    width: 80%;
   }
   &ItemText-low{
     color: white;
-    width: 75%;
+    width: 500px;
+    font-size: 1.4rem;
+    margin-top: 5%;
+    line-height: 28px;
+  }
+  &Link{
+    text-decoration: underline;
+    color:#50E2C1;
+    font-size: 2rem;
+    padding-left: 5%;
   }
   &ItemText-high{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   &ItemButton{
     text-align: center;
-    margin: 0 auto;
+    margin: 50px auto 0;
+
+  }
+  &ItemAdd{
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+    padding: 5px 45px;
+    font-size: 1.8rem;
+    outline: none;
   }
 }
+.ImgVaporesso{
+  background-color: #4A4B4A;
+}
+.DescVaporesso{
+  background-color: white;
+}
+.TextVaporesso{
+  color:#000000;
+}
+.BtnVaporesso{
+  background-color: black;
+  color: white;
+}
+.TitleVaporesso{
+  color: white;
+  margin-bottom: 35px;
+}
 
-.productStars{
-  width: 10px;
+
+
+
+.novices{
+  background: black;
+  &Flex{
+    display: flex;
+  }
+  &Buy{
+    background-color: white;
+    height: 100vh;
+    width: 30%;
+  }
+  &BuyContent{
+    padding: 10% 7%;
+  }
+  &BuyPrice{
+    color: #50E2C1;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 15%;
+  }
+  &BuyText{
+    font-size: 1.5rem;
+    color: #000000;
+    padding: 20% 0 50% 0;
+    line-height: 25px;
+  }
+  &BuyBtn-block{
+    text-align: center;
+  }
+  &BuyBtn{
+    background: none;
+    font-size: 1.5rem;
+    padding: 1% 15%;
+    border-radius: 7px;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  &BuyBtn:hover{
+    background-color: #4A4B4A;
+    color: #50E2C1;
+  }
+  &Description{
+    height: 100vh;
+    width: 70%;
+    background-color: #4A4B4A;
+  }
+  &DescriptionSpan{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+    font-weight: bold;
+  }
+  &DescriptionSpan::before{
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid white;
+    width: 8rem;
+    margin: 0 1.5rem 0 0;
+    transform: translateY(-0.5rem);
+  }
+  &DescriptionSpan::after{
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid white;
+    width: 8rem;
+    margin: 0 1rem 0 1.5rem;
+    transform: translateY(-0.5rem);
+  }
+  &DescriptionFlex{
+    display: flex;
+  }
+  &DescriptionContent{
+    padding: 8% 7% 0 7%;
+  }
+  &Img{
+    width: 300px;
+    padding: 0 46px 53px 0;
+  }
+  &DescriptionCharacteristic{
+    color: white;
+    font-size: 1.5rem;
+  }
+  &DescriptionText{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
 }
 
 

@@ -22,7 +22,7 @@
                 <img src="./assets/imgs/shopping-bag.svg" alt="" class="shoppingBagImg">
             </div>
 
-            <<div class="modalShoppingBag">
+            <div class="modalShoppingBag">
                 <div class="modalShoppingBag-content">
                     <img src="./assets/imgs/cross.svg" alt="" class="crossImg">
                     <div class="modalShoppingBag-product">
