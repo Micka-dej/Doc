@@ -37,36 +37,18 @@ a {
       color: #50e3c2; }
     .navBar-right .navShoppingBag {
       cursor: pointer; }
-    .navBar-right .navBurgerMenu {
-      cursor: pointer;
-      width: 13.4%;
-      background: #4A4B4A;
-      height: 223px;
-      flex-direction: column;
-      overflow: auto;
-      display: flex;
-      text-align: center;
-      padding-top: 50px; }
-    .navBar-right .navBurgerLine {
-      padding: 62px 0 45px 0;
-      height: 100%;
-      width: 60%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-around; }
-      .navBar-right .navBurgerLine-item {
-        height: 100%;
-        width: 1px;
-        background: #fff; }
-      .navBar-right .navBurgerLine .middle {
-        height: 80%;
-        transition: 0.2s ease; }
-    .navBar-right .navBurgerLine:hover .middle {
-      height: 100%; }
-    .navBar-right .navBurgerText {
-      font-size: 2rem;
-      color: #fff;
-      padding-bottom: 32px; }
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+  cursor: pointer; }
+
+.loginText {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #9B9B9B; }
 
 .modalShoppingBag {
   display: none;
@@ -149,16 +131,6 @@ a {
   width: 83%;
   margin: 0 auto;
   padding: 53px 0 0; }
-  .promo .login {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 8%;
-    cursor: pointer; }
-  .promo .loginText {
-    font-size: 2.1rem;
-    font-weight: 300;
-    color: #9B9B9B; }
 
 .articleContainer {
   position: relative; }
@@ -543,5 +515,10 @@ a {
     color: white;
     font-size: 1.5rem;
     line-height: 25px; }
+
+.modelisation .modelisationTitle {
+  font-size: 4.6rem;
+  color: #50E3C2;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
