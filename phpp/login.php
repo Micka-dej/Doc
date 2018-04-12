@@ -12,14 +12,20 @@
 <header class="header">
     <nav class="navBar">
         <div class="navBar-left">
-            <img src="./assets/imgs/navLogo.svg" alt="" class="navLogo">
+            <a href="login.php"><img src="./assets/imgs/navLogo.svg" alt="" class="navLogo"></a>
         </div>
         <div class="navBar-right">
-            <div class="navItems">produits</div>
+            <div class="navItems"><a href="products.php">produits</a></div>
             <div class="navItems">personnaliser</div>
             <div class="navItems">packs</div>
             <div class="navShoppingBag">
                 <img src="./assets/imgs/shopping-bag.svg" alt="" class="shoppingBagImg">
+            </div>
+
+            <div class="modalShoppingBag">
+                <div class="modalShoppingBag-content">
+
+                </div>
             </div>
 
             <div class="navBurgerMenu">
@@ -117,29 +123,53 @@
 
 
 <section class="recommandation">
+    <h1 class="recommandationText">Recommandée pour vous</h1>
     <div class="recommandationContainer">
 
-        <h1 class="recommandationTitle"></h1>
-
         <div class="recommandationItem">
-            <img class="recommandationItemImg" src="./assets/imgs/e-liquide.jpg" alt="img">
+            <img class="recommandationItemImg" src="assets/imgs/product1.png" alt="img">
             <p class="recommandationItemPrice">19 €</p>
             <div class="recommandationItemDot"></div>
         </div>
 
         <div class="recommandationItem">
-            <img class="recommandationItemImg" src="./assets/imgs/e-liquide.jpg" alt="img">
-            <p>29 €</p>
+            <img class="recommandationItemImg" src="assets/imgs/product2.png" alt="img">
+            <p class="recommandationItemPrice">29 €</p>
             <div class="recommandationItemDot"></div>
         </div>
 
         <div class="recommandationItem">
-            <img class="recommandationItemImg" src="./assets/imgs/e-liquide.jpg" alt="img">
-            <p>39 €</p>
+            <img class="recommandationItemImg" src="assets/imgs/product3.png" alt="img">
+            <p class="recommandationItemPrice">39 €</p>
             <div class="recommandationItemDot"></div>
         </div>
 
     </div>
+</section>
+
+<section class="footer">
+    <div class="footerContainer">
+        <div class="footerContainer-items">
+            <p class="footerText">livraison offerte</p>
+            <p class="footerText-sub">À partir de 30 euros</p>
+        </div>
+        <div class="footerContainer-items">
+            <p class="footerText">contactez-nous</p>
+            <p class="footerText-sub">01.46.20.02.00</p>
+        </div>
+        <div class="footerContainer-items">
+            <p class="footerText">avis certifiés</p>
+            <p class="footerText-sub">
+                <img src="./assets/imgs/stars.png" alt="" class="stars">
+            </p>
+        </div>
+    </div>
+
+    <div class="footerCopyright">
+        <p class="footerCopyright-mention">Mentions légales</p>
+        <p class="footerCopyright-text">Copyright © 2018 - SMO’TECH</p>
+    </div>
+
 </section>
 
 <script src="js/loginModal.js"></script>

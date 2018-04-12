@@ -26,7 +26,45 @@
 
             <div class="modalShoppingBag">
                 <div class="modalShoppingBag-content">
+                    <img src="./assets/imgs/cross.svg" alt="" class="crossImg">
+                    <div class="modalShoppingBag-product">
+                        <div class="modalShoppingBag-left">
+                            <div class="modalShoppingBag-head" >
+                                <p class="modalShoppingbag-title">Gecko</p>
+                                <img src="./assets/imgs/shoppingBagStars.svg" alt="" class="modalShoppingbag-img">
+                            </div>
+                            <div class="modalShoppingBag-sub">
+                                <div class="modalShoppingBag-textContent">
+                                    <p class="modalShoppingBag-text">La cigarette la plus apprécié selon nos utilisateurs.</p>
+                                </div>
+                                <div class="modalShoppingBag-priceContent"><span class="modalShoppingBag-price">69 €</span></div>
+                            </div>
+                        </div>
+                        <div class="modalShoppingBag-right">
+                            <button class="modalShoppingBag-btn">paiement</button>
+                            <button class="modalShoppingBag-btn">supprimer</button>
+                        </div>
+                    </div>
 
+                    <div class="modalShoppingBag-product">
+                        <div class="modalShoppingBag-left">
+                            <div class="modalShoppingBag-head" >
+                                <p class="modalShoppingbag-title">Gecko</p>
+                                <img src="./assets/imgs/shoppingBagStars.svg" alt="" class="modalShoppingbag-img">
+                            </div>
+                            <div class="modalShoppingBag-sub">
+                                <div class="modalShoppingBag-textContent">
+                                    <p class="modalShoppingBag-text">La cigarette la plus apprécié selon nos utilisateurs.</p>
+                                </div>
+                                <div class="modalShoppingBag-priceContent"><span class="modalShoppingBag-price">69 €</span></div>
+                            </div>
+                        </div>
+                        <div class="modalShoppingBag-right">
+                            <button class="modalShoppingBag-btn">paiement</button>
+                            <button class="modalShoppingBag-btn">supprimer</button>
+                        </div>
+                    </div>
+                    <p class="totalPrice">TOTAL : 168 €</p>
                 </div>
             </div>
 
@@ -39,7 +77,7 @@
                 <p class="navBurgerText">menu</p>
             </div>
 
-        </div>
+
     </nav>
 
 </header>
@@ -110,5 +148,34 @@
     </section>
 
 </section>
+
+<section class="footer">
+    <div class="footerContainer">
+        <div class="footerContainer-items">
+            <p class="footerText">livraison offerte</p>
+            <p class="footerText-sub">À partir de 30 euros</p>
+        </div>
+        <div class="footerContainer-items">
+            <p class="footerText">contactez-nous</p>
+            <p class="footerText-sub">01.46.20.02.00</p>
+        </div>
+        <div class="footerContainer-items">
+            <p class="footerText">avis certifiés</p>
+            <p class="footerText-sub">
+                <img src="./assets/imgs/stars.png" alt="" class="stars">
+            </p>
+        </div>
+    </div>
+
+    <div class="footerCopyright">
+        <p class="footerCopyright-mention">Mentions légales</p>
+        <p class="footerCopyright-text">Copyright © 2018 - SMO’TECH</p>
+    </div>
+
+</section>
+
+<script src="js/loginModal.js"></script>
+<script src="js/bagMarketModal.js"></script>
+
 </body>
 </html>
