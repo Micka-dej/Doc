@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'connexion.php';
+include 'includes/header.php';
 if (!isset($_SESSION['prenom'])){
     header('Location:login.php?error=Dfghj');
 }
@@ -75,3 +76,7 @@ $stmt->execute();
     </section>
 </body>
 </html>
+
+<?php
+include 'includes/footer.php'
+?>
