@@ -1,0 +1,31 @@
+.siteContent {
+  margin-bottom: 50px;
+}
+
+
+.background {
+  height: 100vh;
+  width: 100%;
+  background-image: url("imgs/TE.jpeg");
+  background-size: 1920px 1080px;
+  background-position: center;
+  background-size: cover;
+}
+.Header {
+  padding-top: 40px;
+  margin: 0 auto;
+  text-align: center;
+  height: 150px;
+  width: 100%;
+
+
+&-logo {
+  margin: 0 auto;
+}
+
+&-title {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+}

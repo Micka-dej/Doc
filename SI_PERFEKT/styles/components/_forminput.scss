@@ -1,0 +1,31 @@
+$borderColor: #6A6A6A;
+$bgColor: #fff;
+
+@mixin baseImput {
+  font-size: 1.6rem;
+  width: 100%;
+  border: 1px solid $borderColor;
+  border-radius: 2px;
+  outline: none;
+  background: $bgColor;
+  padding: 0.9rem 1rem;
+  color: #333;
+}
+
+.formImput-text {
+  @include baseImput; //additionnal Styles
+}
+
+.formImput-select {
+  @include baseImput; //additionnal styles
+}
+
+.formImput-number {
+  @include baseImput;
+  //additionnal Styles
+}
+
+.formImput-submit {
+  @include baseImput;
+  //additionnal Styles
+}

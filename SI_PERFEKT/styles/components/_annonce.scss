@@ -1,0 +1,22 @@
+.twitter-tweet {
+  padding: 40px;
+}
+
+.annonce {
+  &-container {
+    @include for-size(tablet-portrait-up) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &-title {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.6rem;
+  }
+
+  &-tweet {
+    padding: 40px;
+  }
+}
