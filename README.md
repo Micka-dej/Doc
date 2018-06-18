@@ -134,7 +134,7 @@ Les valeurs attribuées de cette façon permettent d'avoir une valeur proportion
 Lorsque vous définissez une valeur en %, vous devez utiliser un nombre entier.
 
 
-### fr
+### FR
 
 La première colonne dont la taille est en pixels ne bouge pas. Seules les deux autres colonnes en fr se redimensionnement dynamiquement. Si on devait effectuer ce réglage en %, ce serait beaucoup plus complexe car le pourcentage serait relatif à la largeur totale du parent.
 
@@ -142,19 +142,19 @@ La première colonne dont la taille est en pixels ne bouge pas. Seules les deux 
 Pourcentage de hauteur du viewport (le viewport est égal à 100 vh).
 Le viewport représente la partie visible au sein de la fenêtre du navigateur.
 
-### Les display :
+### LES DISPLAY :
 
-**display: none
+**display: none**
 l'élement est supprimé ( invisible )
 
-**display: inline
+**display: inline**
 Afficher un élément comme un inline élément (comme ```<span>```).
 Les propriétés height et width n'auront aucun effet sur ce display.
 
-**display: block
+**display: block**
 Afficher un élément comme un block élément (comme ```<p>```)
 
-###font-face
+### FONT-FACE
 
 @font-face
 - @import (URL)
