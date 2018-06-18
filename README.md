@@ -160,6 +160,35 @@ Afficher un élément comme un block élément (comme ```<p>```)
 - @import (URL)
 - ```<link>``` (lien)
 
+#GRID LAYOUT
+
+Le concept général de Grid Layout (ou "positionnement en grille") est de diviser virtuellement l'espace en zones majeures dans une page ou une application. Concrètement et schématiquement, il s'agira de découper en lignes et en colonnes comme nous le ferions pour un tableau de mise en page.
+
+On y trouve d'ailleurs de nombreuses références d'affichage "tabulaire" avec lignes et colonnes, rowspan et colspan. En cela, ce schéma de positionnement est très similaire aux tableaux HTML ou aux rendus de type display: table, display: table-cell et autre display: table-row.
+
+```html
+.container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 100px;
+
+  grid-template-areas:
+        "head head2 . side"
+        "main main2 . side"
+        "footer footer footer footer";
+}
+```
+
+#Types de positionnement
+
+Un élément positionné est un élément dont la propriété de position calculée est ###relative, ###absolute, ###fixed ou ###sticky.
+Un élément positionné de façon relative est un élément dont la propriété de position calculée est relative. Dans ce cas, les propriétés top ou bottom indiquent le décalage vertical à appliquer et left ou right indiquent le décalage horizontal.
+
+Un élément positionné de façon ###absolue est un élément dont la propriété de position calculée est absolute ou fixed. Dans ce cas, les propriétés top, bottom, right et left indiquent les distances entre les bords de l'élément et les bords du bloc englobant (c'est-à-dire l'ancêtre par rapport auquel l'élément est positionné). Si l'élément possède des marges, elles sont ajoutées aux décalages.
+
+Un élément positionné en ###adhérence est un élément dont la propriété de position calculée vaut sticky. Un tel élément se comporte comme un élément positionné de façon relative jusqu'à ce que son bloc englobant dépasse un seuil donné (par exemple fourni par la valeur de top) au sein du conteneur puis il se comporte ensuite comme un élément fixe jusqu'à atteindre le bord opposé du bloc englobant.
+
 
 
 
