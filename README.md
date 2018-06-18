@@ -48,8 +48,6 @@
   --isActive {
       color:green;
   }
-
-
 }
 
 
