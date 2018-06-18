@@ -96,7 +96,7 @@ ajouter des élements a votre DOM pour décorer sans que cela est un impact sur 
       right:0;
     }
   }
-}
+```
 
 ## Unité de mesure ##
 
@@ -122,6 +122,7 @@ html {
 .cover {
   width: 32rem;
 }
+```
 
 
 ### EM
