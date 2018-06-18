@@ -211,6 +211,24 @@ On utilise aussi la propriété flex-wrap avec la valeur wrap, afin de créer un
 }
 ```
 
+# Keyframes #
+
+La règle @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. Cela permet de contrôler une animation plus finement que ce qu'on pourrait obtenir avec les transitions.
+```html
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+```
+Afin d'utiliser ces règles, on créera une règle @keyframes avec un nom pour chaque étape et on utilisera ce nom avec la propriété animation-name afin qu'une animation corresponde à la liste des étapes qui la composent. Chaque règle @keyframes contient une liste de sélecteurs d'étapes dont chacun contient le pourcentage d'avancement de l'animation auquel il correspond ainsi que les informations de styles qui correspondent à cette étape..
+
 # Types de positionnement
 
 Un élément positionné est un élément dont la propriété de position calculée est relative, absolute, fixed ou sticky.
@@ -222,7 +240,8 @@ Un élément positionné en adhérence est un élément dont la propriété de p
 
 # Responsive vs adaptative design 
 
-adaptative : largeurs de blocs fixes (en pixels), quand on redimensionne on a des “sauts” abruptes entre deux breakpoints -> Démo mise en page adaptative 
-responsive : largeurs de blocs fluides (en %), pas de “sauts” quand on redimensionne tout est fluide  -> Démo mise en page responsive
+adaptative : largeurs de blocs fixes (en pixels), quand on redimensionne on a des “sauts” abruptes entre deux breakpoints
+responsive : largeurs de blocs fluides (en %), pas de “sauts” quand on redimensionne tout est fluide.
 
-# Lien utiles : https://github.com/h5bp/Front-end-Developer-Interview-Questions  ( Question possible lors d'un entretien )
+# Lien utiles : #
+https://github.com/h5bp/Front-end-Developer-Interview-Questions  ( Question possible lors d'un entretien )
