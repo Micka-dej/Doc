@@ -1,6 +1,6 @@
-# Doc
+# Documentation
 
-# BEM
+# Convention BEM (Block Element Modifier)
 
 * block
 * Element `__`
@@ -58,13 +58,15 @@ les pseudos attributes before et after sont essentiellement utilisées pour
 ajouter des élements a votre DOM pour décorer sans que cela est un impact sur le référencemment ou votre HTML.
 
 
-```
+```html
 <section class="cover">
   <h2 class="cover_title">Présentation</h2>
 
 </section>
+```
 
 ### ATTENTION ###
+
 * IL EST OBLIGATOIRE D'AVOIR UN CONTENT ''; AFIN QUE VOS AFTER/BEFORE SAFFICHENTS.
 * VOUS POUVEZ LEURS DONNEZ UNE TAILLE, UNE POSITION (ABSOLUTE PAR RAPPORT A SON PARENT)
 * ESSENTIELLEMENT UTILISE POUR LA DECORATION.
@@ -141,7 +143,7 @@ La première colonne dont la taille est en pixels ne bouge pas. Seules les deux 
 Pourcentage de hauteur du viewport (le viewport est égal à 100 vh).
 Le viewport représente la partie visible au sein de la fenêtre du navigateur.
 
-### LES DISPLAY :
+## LES DISPLAY : ##
 
 **display: none**
 l'élement est supprimé ( invisible )
@@ -153,13 +155,13 @@ Les propriétés height et width n'auront aucun effet sur ce display.
 **display: block**
 Afficher un élément comme un block élément (comme ```<p>```)
 
-### FONT-FACE
+## FONT-FACE ##
 
 @font-face
 - @import (URL)
 - ```<link>``` (lien)
 
-# GRID LAYOUT
+## Grid layout ##
 
 Le concept général de Grid Layout (ou "positionnement en grille") est de diviser virtuellement l'espace en zones majeures dans une page ou une application. Concrètement et schématiquement, il s'agira de découper en lignes et en colonnes comme nous le ferions pour un tableau de mise en page.
 
