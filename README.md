@@ -179,11 +179,48 @@ On y trouve d'ailleurs de nombreuses références d'affichage "tabulaire" avec l
 }
 ```
 
+# Flexboxgrid #
+
+On utilise un boîte flexible pour organiser un ensemble de boîte. Le conteneur contient 5 objets fils et on utilise des propriétés afin qu'ils puissent être agrandis/rétrécis avec une base (flex-basis) de 200 pixels.
+
+On utilise aussi la propriété flex-wrap avec la valeur wrap, afin de créer une nouvelle ligne si le conteneur devient trop étroit pour conserver flex-basis.
+On aligne donc par rapport à  start et end plutôt que par rapport à flex-start et flex-end. Dans le cas d'une disposition en grille, on aligne les éléments à l'intérieur de leur zone de grille. Dans ce cas, il s'agit d'une seule cellule mais on pourrait très bien construire une zone composée de plusieurs cellules.
+
+
+On utilise aussi la propriété flex-wrap avec la valeur wrap, afin de créer une nouvelle ligne si le conteneur devient trop étroit pour conserver flex-basis.
+
+
+```html
+<div class="wrapper">
+  <div class="box1">Un</div>
+  <div class="box2">Deux</div>
+  <div class="box3">Trois</div>
+</div>
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: end;
+  grid-auto-rows: 200px;
+}.box1 {
+  align-self: stretch;
+}
+.box2 {
+  align-self: start;
+}
+```
+
 # Types de positionnement
 
-Un élément positionné est un élément dont la propriété de position calculée est ### relative, ### absolute, ### fixed ou ### sticky.
+Un élément positionné est un élément dont la propriété de position calculée est relative, absolute, fixed ou sticky.
 Un élément positionné de façon relative est un élément dont la propriété de position calculée est relative. Dans ce cas, les propriétés top ou bottom indiquent le décalage vertical à appliquer et left ou right indiquent le décalage horizontal.
 
-Un élément positionné de façon ### absolue est un élément dont la propriété de position calculée est absolute ou fixed. Dans ce cas, les propriétés top, bottom, right et left indiquent les distances entre les bords de l'élément et les bords du bloc englobant (c'est-à-dire l'ancêtre par rapport auquel l'élément est positionné). Si l'élément possède des marges, elles sont ajoutées aux décalages.
+Un élément positionné de façon absolue est un élément dont la propriété de position calculée est absolute ou fixed. Dans ce cas, les propriétés top, bottom, right et left indiquent les distances entre les bords de l'élément et les bords du bloc englobant (c'est-à-dire l'ancêtre par rapport auquel l'élément est positionné). Si l'élément possède des marges, elles sont ajoutées aux décalages.
 
-Un élément positionné en ### adhérence est un élément dont la propriété de position calculée vaut sticky. Un tel élément se comporte comme un élément positionné de façon relative jusqu'à ce que son bloc englobant dépasse un seuil donné (par exemple fourni par la valeur de top) au sein du conteneur puis il se comporte ensuite comme un élément fixe jusqu'à atteindre le bord opposé du bloc englobant.
+Un élément positionné en adhérence est un élément dont la propriété de position calculée vaut sticky. Un tel élément se comporte comme un élément positionné de façon relative jusqu'à ce que son bloc englobant dépasse un seuil donné (par exemple fourni par la valeur de top) au sein du conteneur puis il se comporte ensuite comme un élément fixe jusqu'à atteindre le bord opposé du bloc englobant.
+
+# Responsive vs adaptative design 
+
+adaptative : largeurs de blocs fixes (en pixels), quand on redimensionne on a des “sauts” abruptes entre deux breakpoints -> Démo mise en page adaptative 
+responsive : largeurs de blocs fluides (en %), pas de “sauts” quand on redimensionne tout est fluide  -> Démo mise en page responsive
+
+# Lien utiles : https://github.com/h5bp/Front-end-Developer-Interview-Questions  ( Question possible lors d'un entretien )
